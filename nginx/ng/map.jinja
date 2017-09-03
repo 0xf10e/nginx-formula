@@ -17,6 +17,18 @@
             'server_use_symlink': True,
             'pid_file': '/run/nginx.pid',
         },
+        'FreeBSD': {
+            'package': 'nginx',
+            'passenger_package': 'rubygem-passenger',
+            'service': 'nginx',
+            'webuser': 'www',
+            'conf_file': '/usr/local/etc/nginx/nginx.conf',
+            'conf_dir': '/usr/local/etc/nginx',
+            'server_available': '/usr/local/etc/nginx/sites-available',
+            'server_enabled': '/usr/local/etc/nginx/sites-enabled',
+            'server_use_symlink': True,
+            'pid_file': '/run/nginx.pid',
+        },
         'CentOS': {
             'package': 'nginx',
             'passenger_package': 'passenger',
